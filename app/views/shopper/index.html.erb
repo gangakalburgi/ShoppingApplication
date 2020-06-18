@@ -1,0 +1,25 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h3>Products Catalog</h3> 
+    <% @products.each do |product| %>
+    <div class = "entry">
+
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	<%= image_tag(product.image) %> 
+
+    	<h3> <%= product.name %> </h3>
+    	
+    	
+ 		<%= sanitize(product.description) %><br>
+
+ 		<div class="price_line">
+ 			<span class="price"><%= number_to_currency(product.price)%> </span>
+<%= button_to 'Add to Cart', lineitems_path(product_id: product),class: "add_to_cart", remote:true%>
+ 			
+ 		</div> 	
+ 		
+    </div>
+      
+    <% end %>
+ 
