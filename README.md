@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is aa Online Shopping Application designed to learn Ruby on Rails framework. 
+The Application contains 2 views, one for shopper and another for store admin to edit, add or delete the products. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The admin requires login credentials to perform all the actions. 
